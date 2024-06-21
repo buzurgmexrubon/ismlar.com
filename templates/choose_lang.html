@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %} {% endblock %}
+
+
+{% block content %}
+    <form action="{% url 'set_language' %}" method="post">
+        {% csrf_token %}
+        <h1>{% trans 'Change language' %}</h1>
+        <h2>{% trans 'Select language' %}</h2>
+        <h3>{% trans 'Current language' %}: {{ request.session.get('user_language') }}</h3>
+
+        <label for="language">{% trans 'Available languages' %}</label>
+        <select name="language">
+            {% get_language_info_list for LANGUAGES as languages %}
+            {#            {% get_current_language as LANGUAGE_CODE %}#}
+            {#            {% get_available_languages as LANGUAGES %}#}
+            {% for language in languages %}
+                <option value="{{ language.code }}"
+                        {% if language.code == request.session.get('user_language') %}selected{% endif %}>
+                    {{ language.name_local }} ({{ language.code }})
+                </option>
+{#                <li>#}
+{#                    <button type="submit"#}
+{#                            name="language"#}
+{#                            value="{{ language.code }}"#}
+{#                            class="{% if language.code == LANGUAGE_CODE %}selected{% endif %}">#}
+{#                        {{ language.name_local }}#}
+{#                    </button>#}
+{#                </li>#}
+            {% endfor %}
+        </select>
+        <button type="submit">Change Language</button>
+    </form>
+{% endblock %}

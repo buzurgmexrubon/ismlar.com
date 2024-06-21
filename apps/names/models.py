@@ -20,6 +20,7 @@ class Name(BaseModel):
         on_delete=models.CASCADE,
         related_name="names",
     )
+    # slug = models.SlugField(_("Slug"),)
 
     def __str__(self):
         return self.name

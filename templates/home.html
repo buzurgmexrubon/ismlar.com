@@ -1,5 +1,19 @@
 {% extends "base.html" %}
+{% load i18n %}
 
 {% block content %}
-    <h1>Home page</h1>
+    <h1>{% trans 'Home page' %} </h1>
+    
+{#  IT DOESN'T WORK  #}
+{#    {% get_current_language as current_language %}#}
+{##}
+{#    {% if current_language == 'uz' %}#}
+{#        <h2>'Welcome from uz'</h2>#}
+{#    {% elif current_language == 'en' %}#}
+{#        <h2>'Welcome from en'</h2>#}
+{#    {% elif current_language == 'ru' %}#}
+{#        <h2>'Welcome from ru'</h2>#}
+{#    {% else %}#}
+{#        <h2>'Welcome from else block'</h2>#}
+{#    {% endif %}#}
 {% endblock %}
