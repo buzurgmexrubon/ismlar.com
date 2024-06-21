@@ -12,7 +12,7 @@ DJANGO_APPS = [
     "django.contrib.staticfiles",
 ]
 
-PROJECT_APPS = []
+PROJECT_APPS = ["apps.common.apps.CommonConfig"]
 
 THIRD_APPS = []
 
