@@ -12,7 +12,12 @@ DJANGO_APPS = [
     "django.contrib.staticfiles",
 ]
 
-PROJECT_APPS = ["apps.common.apps.CommonConfig"]
+PROJECT_APPS = [
+    "apps.common.apps.CommonConfig",
+    "apps.names.apps.NamesConfig",
+    "apps.origins.apps.OriginsConfig",
+    "apps.continents.apps.ContinentsConfig",
+]
 
 THIRD_APPS = []
 

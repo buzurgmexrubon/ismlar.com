@@ -7,6 +7,9 @@ from django.views.static import serve
 
 urlpatterns = [
     path("", include("apps.common.urls", namespace="common")),
+    path("continents/", include("apps.continents.urls", namespace="continents")),
+    path("origins/", include("apps.origins.urls", namespace="origins")),
+    path("names/", include("apps.names.urls", namespace="names")),
     path("admin/", admin.site.urls),
 ]
 
