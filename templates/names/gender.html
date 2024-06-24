@@ -1,0 +1,339 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block title %} object.gender {% endblock %}
+
+{% block body %}
+    {% block content %}
+
+        <body
+                {% if object.gender == "M" %}
+                    class="bg-cyan-500 xl:bg-white"
+                {% elif object.gender == "F" %}
+                    class="bg-pink-500 xl:bg-white"
+                {% endif %}
+        >
+        <div class="p-4 lg:max-w-7xl lg:mx-auto pb-36">
+
+            {% include 'includes/header.html' %}
+
+            {% include 'includes/nav.html' %}
+
+            <main role="main">
+                <div class="{% if gender == "male" %} xl:bg-cyan-500 {% elif gender == "female" %} xl:bg-pink-500 {% endif %} text-center text-white my-6 space-y-2 xl:my-4 xl:py-6 xl:rounded-2xl">
+                    <div class="bg-white w-14 rounded-full h-14 p-2 mx-auto">
+                        <img src="{% static "img/icon_boy.png" %}" alt="{% trans "Men's name" %}">
+                    </div>
+                    <h1 class="font-bold text-2xl">
+                        {% if object.gender == "M" %}
+                            {% trans "Men's name" %}
+                        {% elif object.gender == "F" %}
+                            {% trans "Women's name" %}
+                        {% endif %}
+                    </h1>
+                </div>
+
+
+                <div class="bg-white px-4 -mx-4 xl:-mx-0 xl:px-0 rounded-tl-2xl rounded-tr-2xl overflow-hidden">
+                    {% include 'includes/origins.html' with origins=origins %}
+                    <div class="my-6">
+                        <h2 class="font-bold text-2xl mb-4">
+                            {% trans "Alphabetically" %}
+                        </h2>
+                        <div class="overflow-x-auto -mx-4">
+                            <div class="inline-flex px-4">
+                                <div class="flex flex-nowrap space-x-2 w-fit">
+                                    <ul class="{% if gender == "male" %} bg-cyan-500 {% elif gender == "female" %} bg-pink-500 {% endif %} list-none flex rounded-2xl text-white p-2 items-center font-bold uppercase">
+                                        <li>
+                                            <a href="../letter/boy/A.html" class="rounded-lg py-2 px-3 flex ">
+                                                A
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/B.html" class="rounded-lg py-2 px-3 flex ">
+                                                B
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/D.html" class="rounded-lg py-2 px-3 flex ">
+                                                D
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/E.html" class="rounded-lg py-2 px-3 flex ">
+                                                E
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/F.html" class="rounded-lg py-2 px-3 flex ">
+                                                F
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/G.html" class="rounded-lg py-2 px-3 flex ">
+                                                G
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/H.html" class="rounded-lg py-2 px-3 flex ">
+                                                H
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/I.html" class="rounded-lg py-2 px-3 flex ">
+                                                I
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/J.html" class="rounded-lg py-2 px-3 flex ">
+                                                J
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/K.html" class="rounded-lg py-2 px-3 flex ">
+                                                K
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/L.html" class="rounded-lg py-2 px-3 flex ">
+                                                L
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/M.html" class="rounded-lg py-2 px-3 flex ">
+                                                M
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/N.html" class="rounded-lg py-2 px-3 flex ">
+                                                N
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/O.html" class="rounded-lg py-2 px-3 flex ">
+                                                O
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/P.html" class="rounded-lg py-2 px-3 flex ">
+                                                P
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/Q.html" class="rounded-lg py-2 px-3 flex ">
+                                                Q
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/R.html" class="rounded-lg py-2 px-3 flex ">
+                                                R
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/S.html" class="rounded-lg py-2 px-3 flex ">
+                                                S
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/T.html" class="rounded-lg py-2 px-3 flex ">
+                                                T
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/U.html" class="rounded-lg py-2 px-3 flex ">
+                                                U
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/V.html" class="rounded-lg py-2 px-3 flex ">
+                                                V
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/X.html" class="rounded-lg py-2 px-3 flex ">
+                                                X
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/Y.html" class="rounded-lg py-2 px-3 flex ">
+                                                Y
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/Z.html" class="rounded-lg py-2 px-3 flex ">
+                                                Z
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/O%E2%80%98.html"
+                                               class="rounded-lg py-2 px-3 flex ">
+                                                O‘
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/G%E2%80%98.html"
+                                               class="rounded-lg py-2 px-3 flex ">
+                                                G‘
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/Sh.html" class="rounded-lg py-2 px-3 flex ">
+                                                Sh
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="../letter/boy/Ch.html" class="rounded-lg py-2 px-3 flex ">
+                                                Ch
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="bg-cyan-600 bg-pink-600"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="my-6">
+                        <h2 class="font-bold text-2xl mb-4">
+                            <a href="{% url "names:most_searched" %}">
+                                {% trans "Most searched names" %}
+                            </a>
+                        </h2>
+                        <div class="p-4 bg-gray-100 rounded-2xl">
+                            <div class="flex mb-4 gap-2">
+                                <ul class="list-none text-cyan-500 w-1/2">
+                                    <li class="">
+                                        <a href="../name/Muhammad.html" class="inline-block py-2">
+                                            Muhammad
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="../name/Mustafo.html" class="inline-block py-2">
+                                            Mustafo
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="../name/Imron.html" class="inline-block py-2">
+                                            Imron
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="../name/Ali.html" class="inline-block py-2">
+                                            Ali
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="../name/Umar.html" class="inline-block py-2">
+                                            Umar
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="list-none text-cyan-500 w-1/2">
+                                    <li class="">
+                                        <a href="../name/Azizbek.html" class="inline-block py-2">
+                                            Azizbek
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="../name/Sardor.html" class="inline-block py-2">
+                                            Sardor
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="../name/Abdulloh.html" class="inline-block py-2">
+                                            Abdulloh
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="../name/Ibrohim.html" class="inline-block py-2">
+                                            Ibrohim
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="../name/Asadbek.html" class="inline-block py-2">
+                                            Asadbek
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="{% url "names:most_searched" %}"
+                               class="block py-2 px-4 rounded-full bg-white text-center">{% trans "Most searched names" %}</a>
+                        </div>
+                    </div>
+
+                    <div class="my-6">
+                        <h3 class="font-bold text-2xl mb-4">
+                            <a href="{% url "names:top100" %}">{% trans "Top 100" %}</a>
+                        </h3>
+                        <div class="p-4 bg-gray-100 rounded-2xl">
+                            <div class="flex mb-4 gap-2">
+                                <ul class="list-none text-cyan-500 w-1/2">
+                                    <li class="">
+                                        <a href="../name/Mustafo.html" class="inline-block py-2">
+                                            Mustafo
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="../name/Zubayr.html" class="inline-block py-2">
+                                            Zubayr
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="../name/Muhammad.html" class="inline-block py-2">
+                                            Muhammad
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="../name/Umar.html" class="inline-block py-2">
+                                            Umar
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="../name/Imron.html" class="inline-block py-2">
+                                            Imron
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="list-none text-cyan-500 w-1/2">
+                                    <li class="">
+                                        <a href="../name/Ali.html" class="inline-block py-2">
+                                            Ali
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="../name/Muhammadyusuf.html" class="inline-block py-2">
+                                            Muhammadyusuf
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="../name/Abubakr.html" class="inline-block py-2">
+                                            Abubakr
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="../name/Muhammadali.html" class="inline-block py-2">
+                                            Muhammadali
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="../name/Muhammadamin.html" class="inline-block py-2">
+                                            Muhammadamin
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="https://ismlar.com/top100"
+                               class="block py-2 px-4 rounded-full bg-white text-center">{% trans "All Top Names" %}</a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            {% include 'includes/footer.html' %}
+
+        </div>
+        </body>
+
+    {% endblock %}
+{% endblock %}

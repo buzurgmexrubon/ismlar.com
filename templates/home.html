@@ -1,19 +1,429 @@
 {% extends "base.html" %}
+{% load static %}
 {% load i18n %}
 
-{% block content %}
-    <h1>{% trans 'Home page' %} </h1>
-    
-{#  IT DOESN'T WORK  #}
-{#    {% get_current_language as current_language %}#}
-{##}
-{#    {% if current_language == 'uz' %}#}
-{#        <h2>'Welcome from uz'</h2>#}
-{#    {% elif current_language == 'en' %}#}
-{#        <h2>'Welcome from en'</h2>#}
-{#    {% elif current_language == 'ru' %}#}
-{#        <h2>'Welcome from ru'</h2>#}
-{#    {% else %}#}
-{#        <h2>'Welcome from else block'</h2>#}
-{#    {% endif %}#}
+{% block title %} {% trans "Home page" %} {% endblock %}
+
+{% block body %}
+    {% block content %}
+        <body class="">
+
+        <div class="p-4 lg:max-w-7xl lg:mx-auto pb-36">
+            {#    <div class="mb-4 rounded-2xl overflow-hidden flex justify-center">#}
+            {#    </div>#}
+
+            {% include 'includes/header_with_search.html' %}
+
+            {% include 'includes/nav.html' %}
+
+            <main role="main">
+                <div class="flex mb-4 space-x-2">
+                    <a href="{% url "names:gender" "male" %}"
+                       class="bg-cyan-100 p-4 rounded-2xl text-cyan-700 grow flex flex-col space-y-2 justify-center mx-auto">
+                        <div class="bg-white w-10 rounded-full h-10 flex mx-auto p-2">
+                            <img src="{% static "img/icon_boy.png" %}" alt="{% trans "Men's name" %}" width="24"
+                                 height="24">
+                        </div>
+                        <div class="mx-auto">
+                            {% trans "Men's name" %}
+                        </div>
+                    </a>
+                    <a href="{% url "names:gender" "female" %}"
+
+                       class="bg-pink-100 p-4 rounded-2xl text-pink-700 grow flex flex-col space-y-2 justify-center mx-auto">
+                        <div class="bg-white w-10 rounded-full h-10 flex mx-auto p-2">
+                            <img src="{% static "img/icon_girl.png" %}" alt="{% trans "Women's name" %}" width="24"
+                                 height="24">
+                        </div>
+                        <div class="mx-auto">
+                            {% trans "Women's name" %}
+                        </div>
+                    </a>
+                </div>
+
+                {% include 'includes/origins.html' with origins=origins %}
+
+                <div class="my-6">
+                    <h2 class="font-bold text-2xl mb-4">{% trans "Alphabetically" %}</h2>
+                    <div class="overflow-x-auto -mx-4">
+                        <div class="inline-flex px-4 sm:w-full">
+                            <div class="flex flex-nowrap space-x-2 sm:w-full">
+                                <div class="w-64 sm:w-1/2">
+                                    <div class="p-4 bg-cyan-500 text-white rounded-2xl">
+                                        <h3 class="mb-2 text-center">
+                                            <a href="{% url "names:gender" "male" %}">
+                                                {% trans "Men's name" %} </a>
+                                        </h3>
+                                        <div class="grid grid-cols-6 text-center font-bold justify-center boys-link">
+                                            {# In this case we should give alphabet from choosen language #}
+                                            <a href="{% url "names:alphabetically" "male" "a" %}" class="p-2">
+                                                {#  https://ismlar.com/letter/boy/A" #}
+                                                A
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "b" %}" class="p-2">
+                                                B
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "d" %}" class="p-2">
+                                                D
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "e" %}" class="p-2">
+                                                E
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "f" %}" class="p-2">
+                                                F
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "g" %}" class="p-2">
+                                                G
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "h" %}" class="p-2">
+                                                H
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "i" %}" class="p-2">
+                                                I
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "j" %}" class="p-2">
+                                                J
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "k" %}" class="p-2">
+                                                K
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "l" %}" class="p-2">
+                                                L
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "m" %}" class="p-2">
+                                                M
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "n" %}" class="p-2">
+                                                N
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "o" %}" class="p-2">
+                                                O
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "p" %}" class="p-2">
+                                                P
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "q" %}" class="p-2">
+                                                Q
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "r" %}" class="p-2">
+                                                R
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "s" %}" class="p-2">
+                                                S
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "t" %}" class="p-2">
+                                                T
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "u" %}" class="p-2">
+                                                U
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "v" %}" class="p-2">
+                                                V
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "x" %}" class="p-2">
+                                                X
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "y" %}" class="p-2">
+                                                Y
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "z" %}" class="p-2">
+                                                Z
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "o`" %}" class="p-2">
+                                                O‘
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "g`" %}" class="p-2">
+                                                G‘
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "sh" %}" class="p-2">
+                                                Sh
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "male" "ch" %}" class="p-2">
+                                                Ch
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-64 sm:w-1/2">
+                                    <div class="p-4 bg-pink-500 text-white rounded-2xl">
+                                        <h3 class="mb-2 text-center">
+                                            <a href="{% url "names:gender" "female" %}">{% trans "Women's name" %}</a>
+                                        </h3>
+                                        <div class="grid grid-cols-6 text-center font-bold justify-center girls-link">
+                                            <a href="{% url "names:alphabetically" "female" "a" %}" class="p-2">
+                                                {#  https://ismlar.com/letter/girl/A" #}
+                                                A
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "b" %}" class="p-2">
+                                                B
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "d" %}" class="p-2">
+                                                D
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "e" %}" class="p-2">
+                                                E
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "f" %}" class="p-2">
+                                                F
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "g" %}" class="p-2">
+                                                G
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "h" %}" class="p-2">
+                                                H
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "i" %}" class="p-2">
+                                                I
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "j" %}" class="p-2">
+                                                J
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "k" %}" class="p-2">
+                                                K
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "l" %}" class="p-2">
+                                                L
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "m" %}" class="p-2">
+                                                M
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "n" %}" class="p-2">
+                                                N
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "o" %}" class="p-2">
+                                                O
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "p" %}" class="p-2">
+                                                P
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "q" %}" class="p-2">
+                                                Q
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "r" %}" class="p-2">
+                                                R
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "s" %}" class="p-2">
+                                                S
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "t" %}" class="p-2">
+                                                T
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "u" %}" class="p-2">
+                                                U
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "v" %}" class="p-2">
+                                                V
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "x" %}" class="p-2">
+                                                X
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "y" %}" class="p-2">
+                                                Y
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "z" %}" class="p-2">
+                                                Z
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "o`" %}" class="p-2">
+                                                O‘
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "g`" %}" class="p-2">
+                                                G‘
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "sh" %}" class="p-2">
+                                                Sh
+                                            </a>
+                                            <a href="{% url "names:alphabetically" "female" "ch" %}" class="p-2">
+                                                Ch
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-6">
+                    <h2 class="font-bold text-2xl mb-4">
+                        <a href="{% url "names:most_searched" %}">{% trans "Most searched names" %}</a>
+                    </h2>
+                    <div class="p-4 bg-gray-100 rounded-2xl">
+                        <div class="flex mb-4 gap-2">
+                            <ul class="list-none text-cyan-500 w-1/2">
+                                <li class="">
+                                    {# Here should come most searched names #}
+                                    <a href="{% url "names:detail" "Muhammad" %}" class="inline-block py-2">
+                                        Muhammad
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://ismlar.com/name/Mustafo" class="inline-block py-2">
+                                        Mustafo
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://ismlar.com/name/Imron" class="inline-block py-2">
+                                        Imron
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://ismlar.com/name/Ali" class="inline-block py-2">
+                                        Ali
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://ismlar.com/name/Umar" class="inline-block py-2">
+                                        Umar
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="list-none text-pink-500 w-1/2">
+                                <li class="">
+                                    <a href="https://ismlar.com/name/Madina" class="inline-block py-2">
+                                        Madina
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://ismlar.com/name/Mubina" class="inline-block py-2">
+                                        Mubina
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://ismlar.com/name/Muslima" class="inline-block py-2">
+                                        Muslima
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://ismlar.com/name/Maftuna" class="inline-block py-2">
+                                        Maftuna
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://ismlar.com/name/Imona" class="inline-block py-2">
+                                        Imona
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="{% url "names:most_searched" %}"
+                           class="block py-2 px-4 rounded-full bg-white text-center">{% trans "Most searched names" %}</a>
+                    </div>
+                </div>
+
+                <div class="my-6">
+                    <h2 class="font-bold text-2xl mb-4">
+                        <a href="{% url "names:top100" %}">{% trans "Top 100" %}</a>
+                    </h2>
+                    <div class="p-4 bg-gray-100 rounded-2xl">
+                        <div class="flex mb-4 gap-2">
+                            <ul class="list-none text-cyan-500 w-1/2">
+                                <li class="">
+                                    <a href="https://ismlar.com/name/Mustafo" class="inline-block py-2">
+                                        Mustafo
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://ismlar.com/name/Zubayr" class="inline-block py-2">
+                                        Zubayr
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://ismlar.com/name/Muhammad" class="inline-block py-2">
+                                        Muhammad
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://ismlar.com/name/Umar" class="inline-block py-2">
+                                        Umar
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://ismlar.com/name/Imron" class="inline-block py-2">
+                                        Imron
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="list-none text-pink-500 w-1/2">
+                                <li class="">
+                                    <a href="https://ismlar.com/name/Sa%E2%80%99diya" class="inline-block py-2">
+                                        Sa’diya
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://ismlar.com/name/Yasmina" class="inline-block py-2">
+                                        Yasmina
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://ismlar.com/name/Safiya" class="inline-block py-2">
+                                        Safiya
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://ismlar.com/name/Hadicha" class="inline-block py-2">
+                                        Hadicha
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="https://ismlar.com/name/Sumayya" class="inline-block py-2">
+                                        Sumayya
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="https://ismlar.com/top100"
+                           class="block py-2 px-4 rounded-full bg-white text-center">{% trans "All Top Names" %}</a>
+                    </div>
+                </div>
+
+                <div class="my-6">
+                    <h2 class="text-2xl font-bold mb-4">{% trans "Interesting origins" %}</h2>
+                    <div class="overflow-x-auto -mx-4">
+                        <div class="inline-flex px-4">
+                            <div class="flex flex-nowrap space-x-2 w-fit">
+                                <div class="w-64">
+                                    <a href="https://ismlar.com/collection/Muhammadali%20yoki%20Mustafo?"
+                                       class="p-4 bg-gray-100 rounded-2xl block h-full">
+                                        Muhammadali yoki Mustafo?
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"
+                                             class="inline">
+                                            <path d="M16.6914 10.7148L11.6914 15.7148C11.5039 15.9023 11.2539 15.9961 11.0039 15.9961C10.7227 15.9961 10.4727 15.9023 10.2852 15.7148C9.87891 15.3398 9.87891 14.6836 10.2852 14.3086L13.5664 10.9961H4.00391C3.44141 10.9961 3.00391 10.5586 3.00391 9.99609C3.00391 9.46484 3.44141 8.99609 4.00391 8.99609H13.5664L10.2852 5.71484C9.87891 5.33984 9.87891 4.68359 10.2852 4.30859C10.6602 3.90234 11.3164 3.90234 11.6914 4.30859L16.6914 9.30859C17.0977 9.68359 17.0977 10.3398 16.6914 10.7148Z"
+                                                  fill="#111111"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="w-64">
+                                    <a href="https://ismlar.com/collection/O%E2%80%98zbekistonda%20oxirgi%20yillarda%20qo%E2%80%98yilgan%20ismlar"
+                                       class="p-4 bg-gray-100 rounded-2xl block h-full">
+                                        O‘zbekistonda oxirgi yillarda qo‘yilgan ismlar
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"
+                                             class="inline">
+                                            <path d="M16.6914 10.7148L11.6914 15.7148C11.5039 15.9023 11.2539 15.9961 11.0039 15.9961C10.7227 15.9961 10.4727 15.9023 10.2852 15.7148C9.87891 15.3398 9.87891 14.6836 10.2852 14.3086L13.5664 10.9961H4.00391C3.44141 10.9961 3.00391 10.5586 3.00391 9.99609C3.00391 9.46484 3.44141 8.99609 4.00391 8.99609H13.5664L10.2852 5.71484C9.87891 5.33984 9.87891 4.68359 10.2852 4.30859C10.6602 3.90234 11.3164 3.90234 11.6914 4.30859L16.6914 9.30859C17.0977 9.68359 17.0977 10.3398 16.6914 10.7148Z"
+                                                  fill="#111111"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="w-64">
+                                    <a href="https://ismlar.com/collection/XX%20asrning%20boshidagi%20ismlar"
+                                       class="p-4 bg-gray-100 rounded-2xl block h-full">
+                                        XX asrning boshidagi ismlar
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"
+                                             class="inline">
+                                            <path d="M16.6914 10.7148L11.6914 15.7148C11.5039 15.9023 11.2539 15.9961 11.0039 15.9961C10.7227 15.9961 10.4727 15.9023 10.2852 15.7148C9.87891 15.3398 9.87891 14.6836 10.2852 14.3086L13.5664 10.9961H4.00391C3.44141 10.9961 3.00391 10.5586 3.00391 9.99609C3.00391 9.46484 3.44141 8.99609 4.00391 8.99609H13.5664L10.2852 5.71484C9.87891 5.33984 9.87891 4.68359 10.2852 4.30859C10.6602 3.90234 11.3164 3.90234 11.6914 4.30859L16.6914 9.30859C17.0977 9.68359 17.0977 10.3398 16.6914 10.7148Z"
+                                                  fill="#111111"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            {% include 'includes/footer.html' %}
+        </div>
+        </body>
+    {% endblock %}
 {% endblock %}

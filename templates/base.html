@@ -1,11 +1,61 @@
+{% load static %}
+
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>{% block title %} {% endblock %} | ismlar.buzruk.uz</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %} {% endblock %} | ismlar.buzruk.uz — the meaning of the world names</title>
+    <meta name="description"
+          content="ismlar.buzruk.uz — complete, detailed meaning, origin, forms of the world names. Find out the meaning of the names of yourself and your loved ones.">
+    <meta name="theme-color" content="#fff"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="msapplication-starturl" content="/">
+
+    <link rel="shortcut icon" href="{% static "img/favicon.ico" %}" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="{% static "img/apple-touch-icon.png" %}">
+
+    <link rel="stylesheet" href="{% static "css/tailwind.css" %}" media="(min-width:200px)">
+
+    {#    <meta name="google-site-verification" content="tt88JSYPhSWoN5ISGohFkR-n_RINCj4i0TC8iATdf6g"/>#}
+    {#    <meta name="msvalidate.01" content="4212C20D695B55E6424EE6EA922C109A"/>#}
+    {#    <meta name="yandex-verification" content="33bc225e5c6a9b97"/>#}
+    {#    <meta name='wmail-verification' content='814d53ce73d74b9ef94dd23f15344759'/>#}
+    {#    <meta name="csrf-token" content="NimUhu1zJj5fsQNvVnLbEvSGGwTgUxqqgzuxMmQp">#}
+
+    {#    <meta property="fb:app_id" content="227489304525285"/>#}
+
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="ismlar.buzruk.uz — the meaning of the world names"/>
+    <meta property="og:description"
+          content="Complete, detailed meaning, origin, forms of the world names. Find out the meaning of the names of yourself and your loved ones."/>
+    <meta property="og:url" content="https://ismlar.buzruk.uz/"/>
+    <meta property="og:site_name" content="ismlar.buzruk.uz"/>
+    <meta property="article:publisher" content="https://www.facebook.com/ism.uz"/>
+    <meta property="og:image" content="{% static "img/og_image.png" %}"/>
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@https://twitter.com/ism_uz"/>
+    <meta name="twitter:domain" content="ismlar.buzruk.uz"/>
+    <meta name="twitter:creator" content="@https://twitter.com/ism_uz"/>
+    <meta name="twitter:image" content="{% static "img/og_image.png" %}">
+    <meta name="twitter:title" content="ismlar.buzruk.uz — the meaning of the world names">
+    <meta name="twitter:description"
+          content="Complete, detailed meaning, origin, forms of the world names. Find out the meaning of the names of yourself and your loved ones.">
 </head>
-<body>
-{% block content %}
+
+{% block body %}
+    {% block content %}
+    {% endblock %}
+    
+    {% block scripts %}
+        <script src="{% static "js/manifest.js" %}"></script>
+        <script src="{% static "js/vendor.js" %}"></script>
+        <script src="{% static "js/main.js" %}"></script>
+    {% endblock %}
 {% endblock %}
-</body>
+
 </html>

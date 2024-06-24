@@ -1,0 +1,1265 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %} {% trans "Favorites" %} {% endblock %}
+
+
+{% block body %}
+    {% block content %}
+        <body class="">
+
+        <div class="p-4 lg:max-w-7xl lg:mx-auto pb-36">
+
+            {% include 'includes/header.html' %}
+
+            {% include 'includes/nav.html' %}
+
+            <main role="main">
+
+                <div class="mb-4">
+                    <h1 class="text-2xl font-bold">
+                        {% trans "Names you like" %}
+                    </h1>
+                    <div class="text-gray-500">
+                        87 ta ism
+                    </div>
+                </div>
+
+                <div class="flex my-4 text-center gap-2">
+                    <a href="favourite.html"
+                       class="py-2 px-4 bg-gray-100 inline-block rounded-full grow font-bold">All</a>
+                    <a href="favourite%EF%B9%96gender=boy.html"
+                       class="py-2 px-4 bg-gray-100 inline-block rounded-full grow ">Men</a>
+                    <a href="favourite%EF%B9%96gender=girl.html"
+                       class="py-2 px-4 bg-gray-100 inline-block rounded-full grow ">Women</a>
+                </div>
+
+                <ul class="flex flex-col space-y-2">
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Abdol.html" class="flex grow font-bold">
+                            Abdol
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Abduahad.html" class="flex grow font-bold">
+                            Abduahad
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Abduaziz.html" class="flex grow font-bold">
+                            Abduaziz
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Abdug%E2%80%98ulom.html" class="flex grow font-bold">
+                            Abdug‘ulom
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Abduqahhor.html" class="flex grow font-bold">
+                            Abduqahhor
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Abduqosim.html" class="flex grow font-bold">
+                            Abduqosim
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Abduvahhob.html" class="flex grow font-bold">
+                            Abduvahhob
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Abram.html" class="flex grow font-bold">
+                            Abram
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-pink-100 text-pink-500">
+                        <a href="name/Achagul.html" class="flex grow font-bold">
+                            Achagul
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-pink-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Amiran.html" class="flex grow font-bold">
+                            Amiran
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-pink-100 text-pink-500">
+                        <a href="name/Andaxol.html" class="flex grow font-bold">
+                            Andaxol
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-pink-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Anna.html" class="flex grow font-bold">
+                            Anna
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-pink-100 text-pink-500">
+                        <a href="name/Annaxol.html" class="flex grow font-bold">
+                            Annaxol
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-pink-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-pink-100 text-pink-500">
+                        <a href="name/Aqchagul.html" class="flex grow font-bold">
+                            Aqchagul
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-pink-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Avlyokuli.html" class="flex grow font-bold">
+                            Avlyokuli
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Azizbek.html" class="flex grow font-bold">
+                            Azizbek
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Baliq.html" class="flex grow font-bold">
+                            Baliq
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Balliboy.html" class="flex grow font-bold">
+                            Balliboy
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Baqir.html" class="flex grow font-bold">
+                            Baqir
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Baqoqul.html" class="flex grow font-bold">
+                            Baqoqul
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Bayrammamat.html" class="flex grow font-bold">
+                            Bayrammamat
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Bayramniyoz.html" class="flex grow font-bold">
+                            Bayramniyoz
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Bayramtursun.html" class="flex grow font-bold">
+                            Bayramtursun
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Bayri.html" class="flex grow font-bold">
+                            Bayri
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-pink-100 text-pink-500">
+                        <a href="name/Beatriche.html" class="flex grow font-bold">
+                            Beatriche
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-pink-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Benjamin.html" class="flex grow font-bold">
+                            Benjamin
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-pink-100 text-pink-500">
+                        <a href="name/Buhojar.html" class="flex grow font-bold">
+                            Buhojar
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-pink-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-pink-100 text-pink-500">
+                        <a href="name/Chervon,%20Chervonoy.html" class="flex grow font-bold">
+                            Chervon, Chervonoy
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-pink-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Dabir.html" class="flex grow font-bold">
+                            Dabir
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Dadaasal.html" class="flex grow font-bold">
+                            Dadaasal
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Davdon.html" class="flex grow font-bold">
+                            Davdon
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Davkar.html" class="flex grow font-bold">
+                            Davkar
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Davlatafzo.html" class="flex grow font-bold">
+                            Davlatafzo
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Davlatshoh.html" class="flex grow font-bold">
+                            Davlatshoh
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Davlatxo%E2%80%98ja.html" class="flex grow font-bold">
+                            Davlatxo‘ja
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Davlatyor.html" class="flex grow font-bold">
+                            Davlatyor
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Davronali.html" class="flex grow font-bold">
+                            Davronali
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-pink-100 text-pink-500">
+                        <a href="name/Elena.html" class="flex grow font-bold">
+                            Elena
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-pink-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-pink-100 text-pink-500">
+                        <a href="name/Ella.html" class="flex grow font-bold">
+                            Ella
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-pink-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-pink-100 text-pink-500">
+                        <a href="name/Emma.html" class="flex grow font-bold">
+                            Emma
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-pink-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Etan.html" class="flex grow font-bold">
+                            Etan
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Federiko.html" class="flex grow font-bold">
+                            Federiko
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/G%E2%80%98unonboy.html" class="flex grow font-bold">
+                            G‘unonboy
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Gulbachcha.html" class="flex grow font-bold">
+                            Gulbachcha
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Gulimjon.html" class="flex grow font-bold">
+                            Gulimjon
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Gulmat.html" class="flex grow font-bold">
+                            Gulmat
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Gulmirza.html" class="flex grow font-bold">
+                            Gulmirza
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Gulobboy.html" class="flex grow font-bold">
+                            Gulobboy
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Gulxo%E2%80%98ja.html" class="flex grow font-bold">
+                            Gulxo‘ja
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Ibray.html" class="flex grow font-bold">
+                            Ibray
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Ibrohimcha.html" class="flex grow font-bold">
+                            Ibrohimcha
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Is%E2%80%99hoq.html" class="flex grow font-bold">
+                            Is’hoq
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Itan.html" class="flex grow font-bold">
+                            Itan
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Jabbor.html" class="flex grow font-bold">
+                            Jabbor
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Javlonxo%E2%80%98ja.html" class="flex grow font-bold">
+                            Javlonxo‘ja
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Javonboy.html" class="flex grow font-bold">
+                            Javonboy
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Javzo.html" class="flex grow font-bold">
+                            Javzo
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Jo%E2%80%98ji.html" class="flex grow font-bold">
+                            Jo‘ji
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-pink-100 text-pink-500">
+                        <a href="name/Juletta.html" class="flex grow font-bold">
+                            Juletta
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-pink-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Kanalboy.html" class="flex grow font-bold">
+                            Kanalboy
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-pink-100 text-pink-500">
+                        <a href="name/Laylon.html" class="flex grow font-bold">
+                            Laylon
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-pink-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Leonardo.html" class="flex grow font-bold">
+                            Leonardo
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-pink-100 text-pink-500">
+                        <a href="name/Lia.html" class="flex grow font-bold">
+                            Lia
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-pink-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-pink-100 text-pink-500">
+                        <a href="name/Maryam.html" class="flex grow font-bold">
+                            Maryam
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-pink-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-pink-100 text-pink-500">
+                        <a href="name/Menglihojar.html" class="flex grow font-bold">
+                            Menglihojar
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-pink-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-pink-100 text-pink-500">
+                        <a href="name/Miya.html" class="flex grow font-bold">
+                            Miya
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-pink-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Muhammadamin.html" class="flex grow font-bold">
+                            Muhammadamin
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-pink-100 text-pink-500">
+                        <a href="name/Muslima.html" class="flex grow font-bold">
+                            Muslima
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-pink-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Nayman.html" class="flex grow font-bold">
+                            Nayman
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-pink-100 text-pink-500">
+                        <a href="name/Samira.html" class="flex grow font-bold">
+                            Samira
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-pink-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Vag%E2%80%98iz.html" class="flex grow font-bold">
+                            Vag‘iz
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-pink-100 text-pink-500">
+                        <a href="name/Valeriya.html" class="flex grow font-bold">
+                            Valeriya
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-pink-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Valid.html" class="flex grow font-bold">
+                            Valid
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Valimirza.html" class="flex grow font-bold">
+                            Valimirza
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Valinazar.html" class="flex grow font-bold">
+                            Valinazar
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Valinur.html" class="flex grow font-bold">
+                            Valinur
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Valiqurbon.html" class="flex grow font-bold">
+                            Valiqurbon
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Valirahmon.html" class="flex grow font-bold">
+                            Valirahmon
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Valish.html" class="flex grow font-bold">
+                            Valish
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Valiy.html" class="flex grow font-bold">
+                            Valiy
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Vasiljon.html" class="flex grow font-bold">
+                            Vasiljon
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Yeldirim.html" class="flex grow font-bold">
+                            Yeldirim
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Yetmish.html" class="flex grow font-bold">
+                            Yetmish
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Zabar.html" class="flex grow font-bold">
+                            Zabar
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Zabirulla.html" class="flex grow font-bold">
+                            Zabirulla
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Zabriddin.html" class="flex grow font-bold">
+                            Zabriddin
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="favourite.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="flex items-center rounded-full py-2 pr-4 pl-6 bg-cyan-100 text-cyan-500">
+                        <a href="name/Zubayr.html" class="flex grow font-bold">
+                            Zubayr
+                        </a>
+
+                        <div class="p-2 cursor-pointer flex items-center">
+                            <a href="name/Zubayr.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="my-6 p-4 rounded-2xl bg-gray-100">
+
+                    <h5 class="font-bold mb-2">Ko‘pchilikka yoqayotgan ismlar</h5>
+
+                    <ul class="list-none divide-y divide-gray-200">
+                        <li class="flex items-center text-cyan-500">
+                            <a href="name/Zubayr.html" class="py-2 grow">
+                                Zubayr
+                            </a>
+                            <div class="p-2 cursor-pointer flex items-center">
+                                <a href="name/Zubayr.html" class="btn-fav inline-block text-cyan-500 fav-btn"
+                                   data-name="">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M2 7.79849V7.64224C2 5.45474 3.5625 3.57974 5.71875 3.23599C7.125 2.98599 8.59375 3.45474 9.625 4.48599L10 4.82974L10.3438 4.48599C11.375 3.45474 12.8438 2.98599 14.25 3.23599C16.4062 3.57974 18 5.45474 18 7.64224V7.79849C18 9.11099 17.4375 10.361 16.5 11.236L10.8438 16.5172C10.625 16.736 10.3125 16.8297 10 16.8297C9.65625 16.8297 9.34375 16.736 9.125 16.5172L3.46875 11.236C2.53125 10.361 2 9.11099 2 7.79849Z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="flex items-center text-pink-500">
+                            <a href="name/Mubina.html" class="py-2 grow">
+                                Mubina
+                            </a>
+                            <div class="p-2 cursor-pointer flex items-center">
+                                <a href="https://ismlar.com/favourite/add/6120"
+                                   class="btn-fav inline-block text-pink-500 fav-btn"
+                                   data-name="">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.625 4.28499L9.96875 4.65999L10.3438 4.31624C11.375 3.28499 12.8438 2.81624 14.25 3.06624C16.4062 3.40999 18 5.28499 18 7.47249V7.62874C18 8.94124 17.4375 10.1912 16.5 11.0662L10.8438 16.3475C10.625 16.5662 10.3125 16.66 10 16.66C9.65625 16.66 9.34375 16.5662 9.125 16.3475L3.46875 11.0662C2.53125 10.1912 2 8.94124 2 7.62874V7.47249C2 5.28499 3.5625 3.40999 5.71875 3.06624C7.125 2.81624 8.59375 3.28499 9.625 4.28499C9.625 4.31624 9.59375 4.28499 9.625 4.28499ZM9.96875 6.78499L8.5625 5.34749C7.875 4.69124 6.90625 4.37874 5.96875 4.53499C4.53125 4.78499 3.5 6.00374 3.5 7.47249V7.62874C3.5 8.53499 3.84375 9.37874 4.5 9.97249L10 15.0975L15.4688 9.97249C16.125 9.37874 16.5 8.53499 16.5 7.62874V7.47249C16.5 6.00374 15.4375 4.78499 14 4.53499C13.0625 4.37874 12.0938 4.69124 11.4062 5.34749L9.96875 6.78499Z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="flex items-center text-cyan-500">
+                            <a href="name/Muhammadali.html" class="py-2 grow">
+                                Muhammadali
+                            </a>
+                            <div class="p-2 cursor-pointer flex items-center">
+                                <a href="top100.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.625 4.28499L9.96875 4.65999L10.3438 4.31624C11.375 3.28499 12.8438 2.81624 14.25 3.06624C16.4062 3.40999 18 5.28499 18 7.47249V7.62874C18 8.94124 17.4375 10.1912 16.5 11.0662L10.8438 16.3475C10.625 16.5662 10.3125 16.66 10 16.66C9.65625 16.66 9.34375 16.5662 9.125 16.3475L3.46875 11.0662C2.53125 10.1912 2 8.94124 2 7.62874V7.47249C2 5.28499 3.5625 3.40999 5.71875 3.06624C7.125 2.81624 8.59375 3.28499 9.625 4.28499C9.625 4.31624 9.59375 4.28499 9.625 4.28499ZM9.96875 6.78499L8.5625 5.34749C7.875 4.69124 6.90625 4.37874 5.96875 4.53499C4.53125 4.78499 3.5 6.00374 3.5 7.47249V7.62874C3.5 8.53499 3.84375 9.37874 4.5 9.97249L10 15.0975L15.4688 9.97249C16.125 9.37874 16.5 8.53499 16.5 7.62874V7.47249C16.5 6.00374 15.4375 4.78499 14 4.53499C13.0625 4.37874 12.0938 4.69124 11.4062 5.34749L9.96875 6.78499Z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="flex items-center text-pink-500">
+                            <a href="name/Sumayya.html" class="py-2 grow">
+                                Sumayya
+                            </a>
+                            <div class="p-2 cursor-pointer flex items-center">
+                                <a href="https://ismlar.com/favourite/add/18644"
+                                   class="btn-fav inline-block text-pink-500 fav-btn"
+                                   data-name="">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.625 4.28499L9.96875 4.65999L10.3438 4.31624C11.375 3.28499 12.8438 2.81624 14.25 3.06624C16.4062 3.40999 18 5.28499 18 7.47249V7.62874C18 8.94124 17.4375 10.1912 16.5 11.0662L10.8438 16.3475C10.625 16.5662 10.3125 16.66 10 16.66C9.65625 16.66 9.34375 16.5662 9.125 16.3475L3.46875 11.0662C2.53125 10.1912 2 8.94124 2 7.62874V7.47249C2 5.28499 3.5625 3.40999 5.71875 3.06624C7.125 2.81624 8.59375 3.28499 9.625 4.28499C9.625 4.31624 9.59375 4.28499 9.625 4.28499ZM9.96875 6.78499L8.5625 5.34749C7.875 4.69124 6.90625 4.37874 5.96875 4.53499C4.53125 4.78499 3.5 6.00374 3.5 7.47249V7.62874C3.5 8.53499 3.84375 9.37874 4.5 9.97249L10 15.0975L15.4688 9.97249C16.125 9.37874 16.5 8.53499 16.5 7.62874V7.47249C16.5 6.00374 15.4375 4.78499 14 4.53499C13.0625 4.37874 12.0938 4.69124 11.4062 5.34749L9.96875 6.78499Z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="flex items-center text-cyan-500">
+                            <a href="name/Muhammadyusuf.html" class="py-2 grow">
+                                Muhammadyusuf
+                            </a>
+                            <div class="p-2 cursor-pointer flex items-center">
+                                <a href="top100.html" class="btn-fav inline-block text-cyan-500 fav-btn" data-name="">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.625 4.28499L9.96875 4.65999L10.3438 4.31624C11.375 3.28499 12.8438 2.81624 14.25 3.06624C16.4062 3.40999 18 5.28499 18 7.47249V7.62874C18 8.94124 17.4375 10.1912 16.5 11.0662L10.8438 16.3475C10.625 16.5662 10.3125 16.66 10 16.66C9.65625 16.66 9.34375 16.5662 9.125 16.3475L3.46875 11.0662C2.53125 10.1912 2 8.94124 2 7.62874V7.47249C2 5.28499 3.5625 3.40999 5.71875 3.06624C7.125 2.81624 8.59375 3.28499 9.625 4.28499C9.625 4.31624 9.59375 4.28499 9.625 4.28499ZM9.96875 6.78499L8.5625 5.34749C7.875 4.69124 6.90625 4.37874 5.96875 4.53499C4.53125 4.78499 3.5 6.00374 3.5 7.47249V7.62874C3.5 8.53499 3.84375 9.37874 4.5 9.97249L10 15.0975L15.4688 9.97249C16.125 9.37874 16.5 8.53499 16.5 7.62874V7.47249C16.5 6.00374 15.4375 4.78499 14 4.53499C13.0625 4.37874 12.0938 4.69124 11.4062 5.34749L9.96875 6.78499Z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="flex items-center text-pink-500">
+                            <a href="name/Hadicha.html" class="py-2 grow">
+                                Hadicha
+                            </a>
+                            <div class="p-2 cursor-pointer flex items-center">
+                                <a href="https://ismlar.com/favourite/add/14112"
+                                   class="btn-fav inline-block text-pink-500 fav-btn"
+                                   data-name="">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.625 4.28499L9.96875 4.65999L10.3438 4.31624C11.375 3.28499 12.8438 2.81624 14.25 3.06624C16.4062 3.40999 18 5.28499 18 7.47249V7.62874C18 8.94124 17.4375 10.1912 16.5 11.0662L10.8438 16.3475C10.625 16.5662 10.3125 16.66 10 16.66C9.65625 16.66 9.34375 16.5662 9.125 16.3475L3.46875 11.0662C2.53125 10.1912 2 8.94124 2 7.62874V7.47249C2 5.28499 3.5625 3.40999 5.71875 3.06624C7.125 2.81624 8.59375 3.28499 9.625 4.28499C9.625 4.31624 9.59375 4.28499 9.625 4.28499ZM9.96875 6.78499L8.5625 5.34749C7.875 4.69124 6.90625 4.37874 5.96875 4.53499C4.53125 4.78499 3.5 6.00374 3.5 7.47249V7.62874C3.5 8.53499 3.84375 9.37874 4.5 9.97249L10 15.0975L15.4688 9.97249C16.125 9.37874 16.5 8.53499 16.5 7.62874V7.47249C16.5 6.00374 15.4375 4.78499 14 4.53499C13.0625 4.37874 12.0938 4.69124 11.4062 5.34749L9.96875 6.78499Z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </main>
+
+            {% include 'includes/footer.html' %}
+        </div>
+        </body>
+
+    {% endblock %}
+{% endblock %}
+

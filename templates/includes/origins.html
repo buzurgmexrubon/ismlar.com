@@ -1,0 +1,22 @@
+{% load i18n %}
+
+<div class="my-6">
+    <div class="flex justify-between items-center mb-4">
+        <h2 class="font-bold text-2xl">
+            {% trans "Origins" %} </h2>
+        <a href="{% url "names:origins" %}">{% trans "All origins" %}</a>
+    </div>
+
+    <div class="overflow-x-auto -mx-4">
+        <div class="inline-flex px-4">
+            <div class="flex flex-nowrap whitespace-nowrap space-x-2">
+                {% for org in origins %}
+                    <a href="{% url "names:origin_by_name" "{{ org.name }}" %}"
+                       class="bg-gray-100 py-2 px-4 rounded-full">
+                        {{ org.name }}
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

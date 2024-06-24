@@ -2,6 +2,18 @@
 
 {% block title %} {% endblock %}
 
-{% block content %}
-    <h1>Names page</h1>
+{% block body %}
+    {% block content %}
+        {% for n in names %}
+            <h1>n.name</h1>
+            <p>name.gender</p>
+            <p>name.origin.name</p>
+            <p>name.origin.continent.name</p>
+            <br>
+            <br>
+            <br>
+        {% empty %}
+        {% endfor %}
+
+    {% endblock %}
 {% endblock %}

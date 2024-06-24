@@ -1,0 +1,246 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block title %} object.name {% endblock %}
+
+{% block body %}
+    {% block content %}
+
+        <body
+                {% if object.gender == "M" %}
+                    class="page-boys"
+                {% elif object.gender == "F" %}
+                    class="page-girls"
+                {% endif %}
+        >
+        <div class="p-4 lg:max-w-7xl lg:mx-auto pb-36">
+
+            {% include 'includes/header.html' %}
+
+            {% include 'includes/nav.html' %}
+
+            <main role="main">
+                <div class="{% if object.gender == "M" %} bg-cyan-100 {% elif object.gender == "F" %} bg-pink-100 {% endif %} p-4 rounded-2xl mb-4 space-y-4">
+                    <h1 class="{% if object.gender == "M" %} text-cyan-500 {% elif object.gender == "F" %} text-pink-500 {% endif %}font-bold text-2xl">
+                        Muhammad
+                    </h1>
+
+                    <div class="space-y-4">
+                        <p>
+                            Maqtovga, olqishlarga sazovor. Payg‘ambarimiz Muhammad sollallohu alayhi vasallamning
+                            (Muhammad
+                            ibn
+                            Abdulloh, 570 yoki 571 Makka - 632, Madina) muborak ismlari. Muhammad Payg‘ambar (sollallohu
+                            alayhi
+                            vasallamning) Allohning eng yaqin do‘sti, kamtarin, dunyoga kelgan eng so‘nggi
+                            payg‘ambardir.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span class="">Shakllari:</span>
+                        <span class=""> 
+                        Muhammadbek,
+                        Muhammadjon,
+                        Nurmuhammad
+                    </span>
+
+                    </div>
+
+                    <div class="flex text-sm items-center space-x-3 justify-between">
+                        {% include 'includes/like_button_with_count.html' with user=user name=name %}
+                        {#                        <div class="flex items-center space-x-1">#}
+                        {#                            <a href="{% url "names:top100" %}"#}
+                        {#                                    {% if object.gender == "M" %}#}
+                        {#                                        class="bg-white w-10 rounded-full h-10 items-center justify-center flex text-cyan-500 fav-btn"#}
+                        {#                                    {% elif object.gender == "F" %}#}
+                        {#                                        class="bg-white w-10 rounded-full h-10 items-center justify-center flex text-pink-500 fav-btn"#}
+                        {#                                    {% endif %}#}
+                        {#                               data-name="favourite_name_button">#}
+                        {#href="../top100.html"#}
+                        {#https://ismlar.com/favourite/add/6471?uuid=undefined#}
+                        {#                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">#}
+                        {#                                    <path d="M9.625 4.28499L9.96875 4.65999L10.3438 4.31624C11.375 3.28499 12.8438 2.81624 14.25 3.06624C16.4062 3.40999 18 5.28499 18 7.47249V7.62874C18 8.94124 17.4375 10.1912 16.5 11.0662L10.8438 16.3475C10.625 16.5662 10.3125 16.66 10 16.66C9.65625 16.66 9.34375 16.5662 9.125 16.3475L3.46875 11.0662C2.53125 10.1912 2 8.94124 2 7.62874V7.47249C2 5.28499 3.5625 3.40999 5.71875 3.06624C7.125 2.81624 8.59375 3.28499 9.625 4.28499C9.625 4.31624 9.59375 4.28499 9.625 4.28499ZM9.96875 6.78499L8.5625 5.34749C7.875 4.69124 6.90625 4.37874 5.96875 4.53499C4.53125 4.78499 3.5 6.00374 3.5 7.47249V7.62874C3.5 8.53499 3.84375 9.37874 4.5 9.97249L10 15.0975L15.4688 9.97249C16.125 9.37874 16.5 8.53499 16.5 7.62874V7.47249C16.5 6.00374 15.4375 4.78499 14 4.53499C13.0625 4.37874 12.0938 4.69124 11.4062 5.34749L9.96875 6.78499Z"/>#}
+                        {#                                </svg>#}
+                        {#                            </a>#}
+                        {#                            <div class="text-gray-500 fav-count">3239</div>#}
+                        {#                        </div>#}
+
+                        <div class="text-gray-500 flex justify-end items-center space-x-2">
+                            <div class=" flex space-x-1 items-center">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" class="inline">
+                                    <path d="M16.7539 7.27148C18.4102 8.92773 18.4102 11.584 16.7539 13.2402L13.2539 16.7715C12.9727 17.084 12.5039 17.084 12.1914 16.8027C11.9102 16.4902 11.9102 16.0215 12.1914 15.7402L15.6914 12.1777C16.7539 11.1152 16.7539 9.39648 15.6914 8.33398L11.6914 4.27148C11.4102 3.99023 11.4102 3.52148 11.7227 3.20898C12.0039 2.92773 12.4727 2.92773 12.7539 3.24023L16.7539 7.27148ZM2.00391 9.17773V4.49023C2.00391 3.67773 2.66016 2.99023 3.50391 2.99023H8.16016C8.69141 2.99023 9.19141 3.20898 9.56641 3.58398L14.8164 8.83398C15.5977 9.61523 15.5977 10.8965 14.8164 11.6777L10.6602 15.834C9.87891 16.6152 8.59766 16.6152 7.81641 15.834L2.56641 10.584C2.19141 10.209 2.00391 9.70898 2.00391 9.17773ZM5.50391 5.49023C4.94141 5.49023 4.50391 5.95898 4.50391 6.49023C4.50391 7.05273 4.94141 7.49023 5.50391 7.49023C6.03516 7.49023 6.50391 7.05273 6.50391 6.49023C6.50391 5.95898 6.03516 5.49023 5.50391 5.49023Z"/>
+                                </svg>
+
+                                <div class="capitalize">
+                                    {# Here should put not `Arabic`, put names continent#}
+                                    <a href="{% url "names:origins_by_name" "Arabic" %}" class="">
+                                        {% trans "Arabic" %}
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="whitespace-nowrap">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" class="inline">
+                                    <path d="M9.73438 7.03125C9.82812 7.03125 9.92188 7 10.0156 7C11.6719 7 13.0156 8.34375 13.0156 10C13.0156 11.6562 11.6719 13 10.0156 13C8.32812 13 7.01562 11.6562 7.01562 10C7.01562 9.9375 7.01562 9.84375 7.01562 9.75C7.29688 9.90625 7.64062 10 8.01562 10C9.10938 10 10.0156 9.125 10.0156 8C10.0156 7.65625 9.89062 7.3125 9.73438 7.03125ZM16.0156 5.53125C17.4844 6.875 18.4531 8.5 18.9219 9.625C19.0156 9.875 19.0156 10.1562 18.9219 10.4062C18.4531 11.5 17.4844 13.125 16.0156 14.5C14.5469 15.875 12.5156 17 10.0156 17C7.48438 17 5.45312 15.875 3.98438 14.5C2.51562 13.125 1.54688 11.5 1.07812 10.4062C0.984375 10.1562 0.984375 9.875 1.07812 9.625C1.54688 8.5 2.51562 6.875 3.98438 5.53125C5.45312 4.15625 7.48438 3 10.0156 3C12.5156 3 14.5469 4.15625 16.0156 5.53125ZM10.0156 5.5C7.51562 5.5 5.51562 7.53125 5.51562 10C5.51562 12.5 7.51562 14.5 10.0156 14.5C12.4844 14.5 14.5156 12.5 14.5156 10C14.5156 7.53125 12.4844 5.5 10.0156 5.5Z"/>
+                                </svg>
+                                <span title="Views">392266</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="overflow-x-auto -mx-4 my-4">
+                    <div class="inline-flex px-4">
+                        <div class="flex flex-nowrap whitespace-nowrap space-x-2 w-fit sm:w-full">
+                            <div class="sm:w-full">
+                                <div class="p-4 rounded-2xl text-white bg-cyan-500">
+                                    <div class="font-bold text-xl">
+                                        8
+                                    </div>
+                                    <div class="text-sm">
+                                        {% trans "The position of <br> on the site" %}
+                                        {#                                        {% trans "The position of <br> on the site" | safe %}#}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sm:w-full">
+                                <div class="p-4 rounded-2xl text-white bg-cyan-500">
+                                    <div class="font-bold text-xl">
+                                        3
+                                    </div>
+                                    <div class="text-sm">
+                                        {% if object.gender == "M" %}
+                                            {% trans "First place <br> among men" %}
+                                        {% elif object.gender == "F" %}
+                                            {% trans "First place <br> among women" %}
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sm:w-full">
+                                <div class="p-4 rounded-2xl text-white bg-cyan-500">
+                                    <div class="font-bold text-xl">
+                                        8
+                                    </div>
+                                    <div class="text-sm">
+                                        {% trans "Number of <br> letters" %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-4 rounded-2xl my-4 bg-cyan-100">
+                    <div>{% trans "Reverse spelling of the name" %}</div>
+                    <h5 class="font-bold text-xl">
+                        Dammahum
+                    </h5>
+                </div>
+
+                <div class="my-4 rounded-2xl overflow-hidden">
+                    {#                <div id="yandex_rtb_R-A-208864-2"></div>#}
+                    {#                <script type="text/javascript">#}
+                    {#                    (function (w, d, n, s, t) {#}
+                    {#                        w[n] = w[n] || [];#}
+                    {#                        w[n].push(function () {#}
+                    {#                            Ya.Context.AdvManager.render({#}
+                    {#                                blockId: "R-A-208864-2",#}
+                    {#                                renderTo: "yandex_rtb_R-A-208864-2",#}
+                    {#                                async: true#}
+                    {#                            });#}
+                    {#                        });#}
+                    {#                        t = d.getElementsByTagName("script")[0];#}
+                    {#                        s = d.createElement("script");#}
+                    {#                        s.type = "text/javascript";#}
+                    {#                        s.src = "//an.yandex.ru/system/context.js";#}
+                    {#                        s.async = true;#}
+                    {#                        t.parentNode.insertBefore(s, t);#}
+                    {#                    })(this, this.document, "yandexContextAsyncCallbacks");#}
+                    {#                </script>#}
+                </div>
+
+
+                <div class="p-4 border border-gray-200 rounded-2xl my-4">
+                    {# TODO:  #}
+                    <h2 class="font-bold text-xl">{% trans "Famous people named MuhammadYusuf" %}</h2>
+
+                    <ul class="divide-y divide-slate-200">
+                        <li class="py-4">
+                            <h5 class="font-bold text-cyan-500">
+                                <a href="../famous-people/Muhammad%20Yusuf.html">
+                                    Muhammad Yusuf
+                                </a>
+                            </h5>
+                            <p>Shoir</p>
+                        </li>
+                    </ul>
+                </div>
+
+                {#            <div class="my-4">#}
+                {#                <div class="promo-block lg:hidden">#}
+                {#                    <!-- Ism Mobile Middle Revive Adserver Asynchronous JS Tag - Generated with Revive Adserver v5.4.0 -->#}
+                {#                    <ins data-revive-zoneid="1" data-revive-id="744263bbd0334a1d2530aad37d43d173"></ins>#}
+                {#                    <script async src="https://p.goodgroup.uz/www/delivery/asyncjs.php"></script>#}
+                {#                </div>#}
+                {#                <div class="promo-block hidden lg:block">#}
+                {#                    <!-- Ism Desktop Middle Revive Adserver Asynchronous JS Tag - Generated with Revive Adserver v5.4.0 -->#}
+                {#                    <ins data-revive-zoneid="8" data-revive-id="744263bbd0334a1d2530aad37d43d173"></ins>#}
+                {#                    <script async src="https://p.goodgroup.uz/www/delivery/asyncjs.php"></script>#}
+                {#                </div>#}
+                {#            </div>#}
+
+                {#            <style>.promo-block img {#}
+                {#                max-width: 100%;#}
+                {#                height: auto;#}
+                {#                border-radius: 16px;#}
+                {#                margin: 0 auto;#}
+                {#            }#}
+                {#            </style>#}
+
+
+                <a href="../user-requests/suggest-famous-person%EF%B9%96name=Muhammad.html"
+                   class="p-4 rounded-2xl flex mb-6 bg-cyan-100">
+                    <div class="text-2xl pr-4 text-cyan-500">
+                        <i class="far fa-envelope"></i>
+                    </div>
+                    <div>
+                        {# TODO:  #}
+                        {% trans "<span class='text-cyan-500'Let us know</span> if you know any celebrities named MuhammadYusuf" %}
+                </a>
+
+
+                <div class="my-6">
+                    {# TODO:  #}
+                    <h2 class="font-bold my-4 text-xl">{% trans "inform People who like the name Muhammad also like the following names" %}</h2>
+                    <div class="flex flex-wrap">
+                        <a href="Hamida.html"
+                           class="px-4 py-2 mr-2 mb-2 font-bold rounded-full bg-pink-100 text-pink-500">Hamida</a>
+                        <a href="Yasira.html"
+                           class="px-4 py-2 mr-2 mb-2 font-bold rounded-full bg-pink-100 text-pink-500">Yasira</a>
+                        <a href="Zaynab.html"
+                           class="px-4 py-2 mr-2 mb-2 font-bold rounded-full bg-pink-100 text-pink-500">Zaynab</a>
+                        <a href="Doston.html"
+                           class="px-4 py-2 mr-2 mb-2 font-bold rounded-full bg-cyan-100 text-cyan-500">Doston</a>
+                        <a href="Zebiniso.html"
+                           class="px-4 py-2 mr-2 mb-2 font-bold rounded-full bg-pink-100 text-pink-500">Zebiniso</a>
+                        <a href="Fariza.html"
+                           class="px-4 py-2 mr-2 mb-2 font-bold rounded-full bg-pink-100 text-pink-500">Fariza</a>
+                        <a href="Mavluda.html"
+                           class="px-4 py-2 mr-2 mb-2 font-bold rounded-full bg-pink-100 text-pink-500">Mavluda</a>
+                        <a href="Zuhriddin.html"
+                           class="px-4 py-2 mr-2 mb-2 font-bold rounded-full bg-cyan-100 text-cyan-500">Zuhriddin</a>
+                        <a href="Sadia.html"
+                           class="px-4 py-2 mr-2 mb-2 font-bold rounded-full bg-pink-100 text-pink-500">Sadia</a>
+                    </div>
+                </div>
+            </main>
+
+            {% include 'includes/footer.html' %}
+        </div>
+        </body>
+    {% endblock %}
+{% endblock %}

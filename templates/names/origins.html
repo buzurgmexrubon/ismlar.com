@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %} {% endblock %}
+
+{% block body %}
+    {% block content %}
+
+        <body class="">
+
+        <div class="p-4 lg:max-w-7xl lg:mx-auto pb-36">
+
+            {% include 'includes/header.html' %}
+
+            {% include 'includes/nav.html' %}
+
+            <main role="main">
+
+                <div class="mb-4">
+                    <h1 class="text-2xl font-bold mb-2">
+                        {% trans "Origins" %}
+                    </h1>
+                    <div class="text-gray-500">
+                        <p>{% trans "In order to make it convenient for users, names on our site are divided into different columns based on their origin." %}</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    {% for org in origins %}
+                        <a href="{% url "names:origin_by_name" "{{ org.name }}" %}" class="flex items-center rounded-full bg-gray-100 py-4 px-6">
+                            <div class="flex grow space-x-1">
+                                <div class="font-bold">
+                                    {{ org.name }}
+                                </div>
+                                <div class="text-gray-500">
+                                    {{ origin_names_count }}
+                                </div>
+                            </div>
+                            <i class="fas fa-angle-right text-gray-500"></i>
+                        </a>
+                    {% endfor %}
+                </div>
+            </main>
+
+            {% include 'includes/footer.html' %}
+        </div>
+        </body>
+    {% endblock %}
+{% endblock %}
+
+
